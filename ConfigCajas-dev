@@ -1,0 +1,8 @@
+server.port=8282
+
+spring.datasource.url=jdbc:postgresql://localhost:5432/aetos
+#spring.datasource.username=eric
+#spring.datasource.password=w5Z4T81O8WPcrrs
+
+#Consultas para el acceso a catalogos Colonias, Ciuadad, Estado, etc
+query.spsbusquedacliente=select trim(numero_cliente) as numero_cliente, nombre_cliente,  descripcion  from spsbusquedacliente(?);
